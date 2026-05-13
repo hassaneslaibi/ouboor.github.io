@@ -275,21 +275,27 @@
     }
     .card-links {
       display: flex;
-      gap: 1rem;
-      justify-content: flex-end;
-      flex-wrap: wrap;
+      border-top: 0.5px solid var(--fg-10);
     }
     .card-link {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.6rem 0.25rem;
       font-family: 'Syne', sans-serif;
       font-size: 0.62rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--fg-40);
       text-decoration: none;
-      transition: color 0.2s;
+      transition: color 0.2s, background 0.2s;
       direction: ltr;
+      border-inline-end: 0.5px solid var(--fg-10);
     }
-    .card-link:hover { color: var(--fg); }
+    .card-link:last-child { border-inline-end: none; }
+    .card-link:hover { color: var(--fg); background: rgba(237,232,223,0.04); }
     .card-link.na {
       color: var(--fg-25);
       opacity: 0.4;
@@ -458,15 +464,15 @@
             <img src="al_tina_al_hamqa.png" alt="التينة الحمقاء"/>
           </div>
           <div class="card-body">
-            <p class="card-num">01 — 2025</p>
+            <p class="card-num">03 · 2026</p>
             <p class="card-title-ar">التينة الحمقاء</p>
             <p class="card-title-en">The Foolish Fig Tree</p>
-            <div class="card-links">
-              <a class="card-link" href="https://open.spotify.com/track/1MedSWkyiG3mTwqgcXrxmi" target="_blank" rel="noopener">Spotify</a>
-              <a class="card-link" href="https://music.youtube.com/watch?v=Q-82z-0mSf8" target="_blank" rel="noopener">YouTube</a>
-              <a class="card-link" href="https://open.anghami.com/jL4RIcUM12b" target="_blank" rel="noopener">Anghami</a>
-              <a class="card-link" href="https://music.apple.com/us/song/%D8%A7%D9%84%D8%AA%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AD%D9%85%D9%82%D8%A7%D8%A1/1888727525" target="_blank" rel="noopener">Apple Music</a>
-            </div>
+          </div>
+          <div class="card-links">
+            <a class="card-link" href="https://open.spotify.com/track/1MedSWkyiG3mTwqgcXrxmi" target="_blank" rel="noopener">Spotify</a>
+            <a class="card-link" href="https://music.youtube.com/watch?v=Q-82z-0mSf8" target="_blank" rel="noopener">YouTube</a>
+            <a class="card-link" href="https://open.anghami.com/jL4RIcUM12b" target="_blank" rel="noopener">Anghami</a>
+            <a class="card-link" href="https://music.apple.com/us/song/%D8%A7%D9%84%D8%AA%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AD%D9%85%D9%82%D8%A7%D8%A1/1888727525" target="_blank" rel="noopener">Apple Music</a>
           </div>
         </div>
 
@@ -475,15 +481,15 @@
             <img src="huna_baqun.png" alt="هنا باقون"/>
           </div>
           <div class="card-body">
-            <p class="card-num">02 — 2025</p>
+            <p class="card-num">05 · 2026</p>
             <p class="card-title-ar">هنا باقون</p>
             <p class="card-title-en">Here We Remain</p>
-            <div class="card-links">
-              <a class="card-link" href="https://open.spotify.com/track/0dRT0VsxjGGcwn2p5GFg6Y" target="_blank" rel="noopener">Spotify</a>
-              <a class="card-link" href="https://music.youtube.com/watch?v=yLWIBMyOgmI" target="_blank" rel="noopener">YouTube</a>
-              <a class="card-link na">Anghami</a>
-              <a class="card-link na">Apple Music</a>
-            </div>
+          </div>
+          <div class="card-links">
+            <a class="card-link" href="https://open.spotify.com/track/0dRT0VsxjGGcwn2p5GFg6Y" target="_blank" rel="noopener">Spotify</a>
+            <a class="card-link" href="https://music.youtube.com/watch?v=yLWIBMyOgmI" target="_blank" rel="noopener">YouTube</a>
+            <a class="card-link na">Anghami</a>
+            <a class="card-link" href="https://music.apple.com/us/album/%D9%87%D9%86%D8%A7-%D8%A8%D8%A7%D9%82%D9%88%D9%86-single/6768071620" target="_blank" rel="noopener">Apple Music</a>
           </div>
         </div>
 
@@ -494,8 +500,8 @@
   <section id="platforms" class="platforms-section">
     <div class="section-wrap">
       <div class="section-header">
-        <span class="section-label">Listen everywhere</span>
-        <span class="section-ar">استمع</span>
+        <span class="section-label">Follow us</span>
+        <span class="section-ar">تابعنا</span>
       </div>
 
       <div class="plat-primary">
@@ -506,7 +512,7 @@
           <span class="plat-name">Spotify</span>
         </a>
 
-        <a class="plat-big" href="https://music.apple.com/us/song/%D8%A7%D9%84%D8%AA%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%AD%D9%85%D9%82%D8%A7%D8%A1/1888727525" target="_blank" rel="noopener">
+        <a class="plat-big" href="https://music.apple.com/us/artist/%D8%B9%D8%A8%D9%88%D8%B1/1896376843" target="_blank" rel="noopener">
           <div class="plat-icon apple">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           </div>
